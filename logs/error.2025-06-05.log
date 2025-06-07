@@ -1,0 +1,387 @@
+2025-06-05 00:24:02 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /bank/create - Required request body is missing: public com.loanlelo.LoanLeLe.DTO.BankDTO.BankRegister com.loanlelo.LoanLeLe.Controller.AdminAPI.BankRegisterController.registerBank(com.loanlelo.LoanLeLe.DTO.BankDTO.BankRegister)
+org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.loanlelo.LoanLeLe.DTO.BankDTO.BankRegister com.loanlelo.LoanLeLe.Controller.AdminAPI.BankRegisterController.registerBank(com.loanlelo.LoanLeLe.DTO.BankDTO.BankRegister)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:179)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:150)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181)
+2025-06-05 08:56:35 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /bank/create - No static resource bank/create.
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource bank/create.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+2025-06-05 09:00:22 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+org.springframework.security.core.userdetails.UsernameNotFoundException: User not found with email: admin@example.com
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.UserInfoService.loadUserByUsername(UserInfoService.java:52)
+	at com.loanlelo.LoanLeLe.Filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:48)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+2025-06-05 09:01:36 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /bank/get - No static resource bank/get.
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource bank/get.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+2025-06-05 09:02:17 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /bank - Request method 'POST' is not supported
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:267)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:127)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+2025-06-05 09:02:50 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /admin/get - Request method 'GET' is not supported
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:267)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:127)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+2025-06-05 09:04:03 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /admin/get - JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:408)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:356)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:204)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:176)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:150)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 5, column: 1]
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2666)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:742)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2103)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:1753)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextFieldName(UTF8StreamJsonParser.java:1040)
+2025-06-05 09:42:06 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /admin/bank/create/loan - Handler dispatch failed: java.lang.Error: Unresolved compilation problem: 
+	The method getBankEmail() is undefined for the type CreateLoanByBank
+
+jakarta.servlet.ServletException: Handler dispatch failed: java.lang.Error: Unresolved compilation problem: 
+	The method getBankEmail() is undefined for the type CreateLoanByBank
+
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1104)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The method getBankEmail() is undefined for the type CreateLoanByBank
+
+	at com.loanlelo.LoanLeLe.Service.BankService.BankRegisterAndUpdate.createLoanByBank(BankRegisterAndUpdate.java:54)
+	at com.loanlelo.LoanLeLe.Controller.AdminAPI.BankRegisterController.createLoan(BankRegisterController.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+2025-06-05 09:48:56 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /admin/bank/create/loan - Handler dispatch failed: java.lang.Error: Unresolved compilation problem: 
+	The method getBankEmail() is undefined for the type CreateLoanByBank
+
+jakarta.servlet.ServletException: Handler dispatch failed: java.lang.Error: Unresolved compilation problem: 
+	The method getBankEmail() is undefined for the type CreateLoanByBank
+
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1104)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The method getBankEmail() is undefined for the type CreateLoanByBank
+
+	at com.loanlelo.LoanLeLe.Service.BankService.BankRegisterAndUpdate.createLoanByBank(BankRegisterAndUpdate.java:54)
+	at com.loanlelo.LoanLeLe.Controller.AdminAPI.BankRegisterController.createLoan(BankRegisterController.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+2025-06-05 10:20:44 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-06-04T19:22:13Z. Current time: 2025-06-05T04:50:44Z, a difference of 34111009 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-05 10:26:09 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Unique index or primary key violation: "PUBLIC.UKC0R9ATAMXVBHJJVY5J8DA1KAM_INDEX_3 ON PUBLIC.ADMIN(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'admin99@loanlelo.com' )"; SQL statement:
+insert into admin (email,password,role,username,id) values (?,?,?,?,default) [23505-232]
+2025-06-05 10:26:09 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /admin/create - could not execute statement [Unique index or primary key violation: "PUBLIC.UKC0R9ATAMXVBHJJVY5J8DA1KAM_INDEX_3 ON PUBLIC.ADMIN(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'admin99@loanlelo.com' )"; SQL statement:
+insert into admin (email,password,role,username,id) values (?,?,?,?,default) [23505-232]] [insert into admin (email,password,role,username,id) values (?,?,?,?,default)]; SQL [insert into admin (email,password,role,username,id) values (?,?,?,?,default)]; constraint [PUBLIC.UKC0R9ATAMXVBHJJVY5J8DA1KAM_INDEX_3]
+org.springframework.dao.DataIntegrityViolationException: could not execute statement [Unique index or primary key violation: "PUBLIC.UKC0R9ATAMXVBHJJVY5J8DA1KAM_INDEX_3 ON PUBLIC.ADMIN(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'admin99@loanlelo.com' )"; SQL statement:
+insert into admin (email,password,role,username,id) values (?,?,?,?,default) [23505-232]] [insert into admin (email,password,role,username,id) values (?,?,?,?,default)]; SQL [insert into admin (email,password,role,username,id) values (?,?,?,?,default)]; constraint [PUBLIC.UKC0R9ATAMXVBHJJVY5J8DA1KAM_INDEX_3]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:294)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:256)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:560)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [Unique index or primary key violation: "PUBLIC.UKC0R9ATAMXVBHJJVY5J8DA1KAM_INDEX_3 ON PUBLIC.ADMIN(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'admin99@loanlelo.com' )"; SQL statement:
+insert into admin (email,password,role,username,id) values (?,?,?,?,default) [23505-232]] [insert into admin (email,password,role,username,id) values (?,?,?,?,default)]
+	at org.hibernate.dialect.H2Dialect.lambda$buildSQLExceptionConversionDelegate$3(H2Dialect.java:759)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:116)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.UKC0R9ATAMXVBHJJVY5J8DA1KAM_INDEX_3 ON PUBLIC.ADMIN(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'admin99@loanlelo.com' )"; SQL statement:
+insert into admin (email,password,role,username,id) values (?,?,?,?,default) [23505-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:523)
+2025-06-05 12:07:25 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+org.springframework.security.core.userdetails.UsernameNotFoundException: User not found with email: admin99@loanlelo.com
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.UserInfoService.loadUserByUsername(UserInfoService.java:52)
+	at com.loanlelo.LoanLeLe.Filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:48)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+2025-06-05 12:08:48 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Unique index or primary key violation: "PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1 ON PUBLIC.BANK(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'help@futuresavingsbank.com' )"; SQL statement:
+insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default) [23505-232]
+2025-06-05 12:08:48 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /admin/bank/create - could not execute statement [Unique index or primary key violation: "PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1 ON PUBLIC.BANK(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'help@futuresavingsbank.com' )"; SQL statement:
+insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default) [23505-232]] [insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default)]; SQL [insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default)]; constraint [PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1]
+org.springframework.dao.DataIntegrityViolationException: could not execute statement [Unique index or primary key violation: "PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1 ON PUBLIC.BANK(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'help@futuresavingsbank.com' )"; SQL statement:
+insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default) [23505-232]] [insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default)]; SQL [insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default)]; constraint [PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:294)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:256)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:560)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [Unique index or primary key violation: "PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1 ON PUBLIC.BANK(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'help@futuresavingsbank.com' )"; SQL statement:
+insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default) [23505-232]] [insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default)]
+	at org.hibernate.dialect.H2Dialect.lambda$buildSQLExceptionConversionDelegate$3(H2Dialect.java:759)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:116)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1 ON PUBLIC.BANK(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'help@futuresavingsbank.com' )"; SQL statement:
+insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default) [23505-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:523)
+2025-06-05 12:10:43 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Unique index or primary key violation: "PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1 ON PUBLIC.BANK(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'help@futuresavingsbank.com' )"; SQL statement:
+insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default) [23505-232]
+2025-06-05 12:10:43 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /admin/bank/create - could not execute statement [Unique index or primary key violation: "PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1 ON PUBLIC.BANK(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'help@futuresavingsbank.com' )"; SQL statement:
+insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default) [23505-232]] [insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default)]; SQL [insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default)]; constraint [PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1]
+org.springframework.dao.DataIntegrityViolationException: could not execute statement [Unique index or primary key violation: "PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1 ON PUBLIC.BANK(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'help@futuresavingsbank.com' )"; SQL statement:
+insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default) [23505-232]] [insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default)]; SQL [insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default)]; constraint [PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:294)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:256)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:560)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [Unique index or primary key violation: "PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1 ON PUBLIC.BANK(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'help@futuresavingsbank.com' )"; SQL statement:
+insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default) [23505-232]] [insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default)]
+	at org.hibernate.dialect.H2Dialect.lambda$buildSQLExceptionConversionDelegate$3(H2Dialect.java:759)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:116)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1 ON PUBLIC.BANK(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'help@futuresavingsbank.com' )"; SQL statement:
+insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default) [23505-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:523)
+2025-06-05 12:48:09 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-06-05T07:07:44Z. Current time: 2025-06-05T07:18:09Z, a difference of 625762 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-05 13:05:13 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Unique index or primary key violation: "PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1 ON PUBLIC.BANK(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'help@futuresavingsbank.com' )"; SQL statement:
+insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default) [23505-232]
+2025-06-05 13:05:13 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /admin/bank/create - could not execute statement [Unique index or primary key violation: "PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1 ON PUBLIC.BANK(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'help@futuresavingsbank.com' )"; SQL statement:
+insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default) [23505-232]] [insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default)]; SQL [insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default)]; constraint [PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1]
+org.springframework.dao.DataIntegrityViolationException: could not execute statement [Unique index or primary key violation: "PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1 ON PUBLIC.BANK(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'help@futuresavingsbank.com' )"; SQL statement:
+insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default) [23505-232]] [insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default)]; SQL [insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default)]; constraint [PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:294)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:256)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:560)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [Unique index or primary key violation: "PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1 ON PUBLIC.BANK(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'help@futuresavingsbank.com' )"; SQL statement:
+insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default) [23505-232]] [insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default)]
+	at org.hibernate.dialect.H2Dialect.lambda$buildSQLExceptionConversionDelegate$3(H2Dialect.java:759)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:116)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1 ON PUBLIC.BANK(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'help@futuresavingsbank.com' )"; SQL statement:
+insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default) [23505-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:523)
+2025-06-05 13:21:19 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-06-05T07:48:52Z. Current time: 2025-06-05T07:51:19Z, a difference of 147343 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-05 13:21:19 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-06-05T07:48:52Z. Current time: 2025-06-05T07:51:19Z, a difference of 147409 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-05 13:21:29 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-06-05T07:48:52Z. Current time: 2025-06-05T07:51:29Z, a difference of 157858 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-05 13:21:29 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-06-05T07:48:52Z. Current time: 2025-06-05T07:51:29Z, a difference of 157887 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-05 13:22:19 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-06-05T07:48:52Z. Current time: 2025-06-05T07:52:19Z, a difference of 207450 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-05 13:22:19 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-06-05T07:48:52Z. Current time: 2025-06-05T07:52:19Z, a difference of 207490 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-05 13:23:22 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-06-05T07:48:52Z. Current time: 2025-06-05T07:53:22Z, a difference of 270644 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-05 14:10:01 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-06-05T08:23:27Z. Current time: 2025-06-05T08:40:01Z, a difference of 994971 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-05 14:10:02 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-06-05T08:23:27Z. Current time: 2025-06-05T08:40:02Z, a difference of 995025 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-05 14:32:51 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /admin/loan/create - No static resource admin/loan/create.
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource admin/loan/create.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+2025-06-05 14:47:23 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-06-05T09:10:58Z. Current time: 2025-06-05T09:17:23Z, a difference of 385491 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-05 14:47:23 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-06-05T09:10:58Z. Current time: 2025-06-05T09:17:23Z, a difference of 385518 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-05 16:10:17 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-06-05T09:48:26Z. Current time: 2025-06-05T10:40:17Z, a difference of 3111194 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-05 16:10:17 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-06-05T09:48:26Z. Current time: 2025-06-05T10:40:17Z, a difference of 3111243 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-05 16:36:26 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-06-05T09:48:26Z. Current time: 2025-06-05T11:06:26Z, a difference of 4680254 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-05 16:36:26 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-06-05T09:48:26Z. Current time: 2025-06-05T11:06:26Z, a difference of 4680325 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-05 17:09:50 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-06-05T09:48:26Z. Current time: 2025-06-05T11:39:50Z, a difference of 6684473 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-05 17:09:50 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-06-05T09:48:26Z. Current time: 2025-06-05T11:39:50Z, a difference of 6684618 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-05 17:44:24 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Unique index or primary key violation: "PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1 ON PUBLIC.BANK(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'futurebank@example.com' )"; SQL statement:
+insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default) [23505-232]
+2025-06-05 17:44:24 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /admin/bank/create - could not execute statement [Unique index or primary key violation: "PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1 ON PUBLIC.BANK(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'futurebank@example.com' )"; SQL statement:
+insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default) [23505-232]] [insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default)]; SQL [insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default)]; constraint [PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1]
+org.springframework.dao.DataIntegrityViolationException: could not execute statement [Unique index or primary key violation: "PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1 ON PUBLIC.BANK(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'futurebank@example.com' )"; SQL statement:
+insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default) [23505-232]] [insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default)]; SQL [insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default)]; constraint [PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:294)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:256)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:560)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [Unique index or primary key violation: "PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1 ON PUBLIC.BANK(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'futurebank@example.com' )"; SQL statement:
+insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default) [23505-232]] [insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default)]
+	at org.hibernate.dialect.H2Dialect.lambda$buildSQLExceptionConversionDelegate$3(H2Dialect.java:759)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:116)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.UKO359KQ00HS0XAEIHBVL6Y02DA_INDEX_1 ON PUBLIC.BANK(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'futurebank@example.com' )"; SQL statement:
+insert into bank (address,admin_id,contact_number,email,license_number,name,id) values (?,?,?,?,?,?,default) [23505-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:523)
+2025-06-05 17:50:50 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-05 17:51:40 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-05 17:52:01 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)

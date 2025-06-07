@@ -1,0 +1,882 @@
+2025-06-04 09:48:26 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.userdetails.UserDetails.getUsername()" because "userDetails" is null
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.validateToken(JwtService.java:69)
+	at com.loanlelo.LoanLeLe.Filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+2025-06-04 09:53:05 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - UserDetailsService returned null, which is an interface contract violation
+org.springframework.security.authentication.InternalAuthenticationServiceException: UserDetailsService returned null, which is an interface contract violation
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:214)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:30)
+2025-06-04 09:54:26 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - UserDetailsService returned null, which is an interface contract violation
+org.springframework.security.authentication.InternalAuthenticationServiceException: UserDetailsService returned null, which is an interface contract violation
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:214)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:30)
+2025-06-04 09:55:28 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - UserDetailsService returned null, which is an interface contract violation
+org.springframework.security.authentication.InternalAuthenticationServiceException: UserDetailsService returned null, which is an interface contract violation
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:214)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:30)
+2025-06-04 09:57:18 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - UserDetailsService returned null, which is an interface contract violation
+org.springframework.security.authentication.InternalAuthenticationServiceException: UserDetailsService returned null, which is an interface contract violation
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:214)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:30)
+2025-06-04 09:58:43 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - Bad credentials
+org.springframework.security.authentication.BadCredentialsException: Bad credentials
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:107)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:150)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:214)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:30)
+2025-06-04 10:10:44 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.userdetails.UserDetails.getUsername()" because "userDetails" is null
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.validateToken(JwtService.java:69)
+	at com.loanlelo.LoanLeLe.Filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+2025-06-04 10:10:52 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.userdetails.UserDetails.getUsername()" because "userDetails" is null
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.validateToken(JwtService.java:69)
+	at com.loanlelo.LoanLeLe.Filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+2025-06-04 10:11:20 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.userdetails.UserDetails.getUsername()" because "userDetails" is null
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.validateToken(JwtService.java:69)
+	at com.loanlelo.LoanLeLe.Filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+2025-06-04 10:11:23 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.userdetails.UserDetails.getUsername()" because "userDetails" is null
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.validateToken(JwtService.java:69)
+	at com.loanlelo.LoanLeLe.Filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+2025-06-04 10:11:25 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.userdetails.UserDetails.getUsername()" because "userDetails" is null
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.validateToken(JwtService.java:69)
+	at com.loanlelo.LoanLeLe.Filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+2025-06-04 10:11:26 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.userdetails.UserDetails.getUsername()" because "userDetails" is null
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.validateToken(JwtService.java:69)
+	at com.loanlelo.LoanLeLe.Filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+2025-06-04 10:12:52 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.userdetails.UserDetails.getUsername()" because "userDetails" is null
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.validateToken(JwtService.java:69)
+	at com.loanlelo.LoanLeLe.Filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+2025-06-04 10:13:28 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.userdetails.UserDetails.getUsername()" because "userDetails" is null
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.validateToken(JwtService.java:69)
+	at com.loanlelo.LoanLeLe.Filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+2025-06-04 10:13:41 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.userdetails.UserDetails.getUsername()" because "userDetails" is null
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.validateToken(JwtService.java:69)
+	at com.loanlelo.LoanLeLe.Filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+2025-06-04 10:14:08 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.userdetails.UserDetails.getUsername()" because "userDetails" is null
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.validateToken(JwtService.java:69)
+	at com.loanlelo.LoanLeLe.Filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+2025-06-04 10:15:25 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.userdetails.UserDetails.getUsername()" because "userDetails" is null
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.validateToken(JwtService.java:69)
+	at com.loanlelo.LoanLeLe.Filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+2025-06-04 10:15:33 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.userdetails.UserDetails.getUsername()" because "userDetails" is null
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.validateToken(JwtService.java:69)
+	at com.loanlelo.LoanLeLe.Filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+2025-06-04 10:17:15 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.userdetails.UserDetails.getUsername()" because "userDetails" is null
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.validateToken(JwtService.java:69)
+	at com.loanlelo.LoanLeLe.Filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+2025-06-04 10:22:17 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.userdetails.UserDetails.getUsername()" because "userDetails" is null
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.validateToken(JwtService.java:69)
+	at com.loanlelo.LoanLeLe.Filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+2025-06-04 10:22:22 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.userdetails.UserDetails.getUsername()" because "userDetails" is null
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.validateToken(JwtService.java:69)
+	at com.loanlelo.LoanLeLe.Filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+2025-06-04 10:28:04 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.userdetails.UserDetails.getUsername()" because "userDetails" is null
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.validateToken(JwtService.java:69)
+	at com.loanlelo.LoanLeLe.Filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+2025-06-04 10:30:41 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.userdetails.UserDetails.getUsername()" because "userDetails" is null
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.validateToken(JwtService.java:69)
+	at com.loanlelo.LoanLeLe.Filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+2025-06-04 10:32:04 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.io.DecodingException: Illegal base64url character: '('
+	at io.jsonwebtoken.io.Base64.ctoi(Base64.java:221)
+	at io.jsonwebtoken.io.Base64.decodeFast(Base64.java:270)
+	at io.jsonwebtoken.io.Base64Decoder.decode(Base64Decoder.java:36)
+	at io.jsonwebtoken.io.Base64Decoder.decode(Base64Decoder.java:23)
+	at io.jsonwebtoken.io.ExceptionPropagatingDecoder.decode(ExceptionPropagatingDecoder.java:36)
+2025-06-04 10:32:15 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.io.DecodingException: Illegal base64url character: '('
+	at io.jsonwebtoken.io.Base64.ctoi(Base64.java:221)
+	at io.jsonwebtoken.io.Base64.decodeFast(Base64.java:270)
+	at io.jsonwebtoken.io.Base64Decoder.decode(Base64Decoder.java:36)
+	at io.jsonwebtoken.io.Base64Decoder.decode(Base64Decoder.java:23)
+	at io.jsonwebtoken.io.ExceptionPropagatingDecoder.decode(ExceptionPropagatingDecoder.java:36)
+2025-06-04 10:32:17 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.io.DecodingException: Illegal base64url character: '('
+	at io.jsonwebtoken.io.Base64.ctoi(Base64.java:221)
+	at io.jsonwebtoken.io.Base64.decodeFast(Base64.java:270)
+	at io.jsonwebtoken.io.Base64Decoder.decode(Base64Decoder.java:36)
+	at io.jsonwebtoken.io.Base64Decoder.decode(Base64Decoder.java:23)
+	at io.jsonwebtoken.io.ExceptionPropagatingDecoder.decode(ExceptionPropagatingDecoder.java:36)
+2025-06-04 10:36:28 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.io.DecodingException: Illegal base64url character: '('
+	at io.jsonwebtoken.io.Base64.ctoi(Base64.java:221)
+	at io.jsonwebtoken.io.Base64.decodeFast(Base64.java:270)
+	at io.jsonwebtoken.io.Base64Decoder.decode(Base64Decoder.java:36)
+	at io.jsonwebtoken.io.Base64Decoder.decode(Base64Decoder.java:23)
+	at io.jsonwebtoken.io.ExceptionPropagatingDecoder.decode(ExceptionPropagatingDecoder.java:36)
+2025-06-04 10:37:34 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.userdetails.UserDetails.getUsername()" because "userDetails" is null
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.validateToken(JwtService.java:69)
+	at com.loanlelo.LoanLeLe.Filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+2025-06-04 10:37:40 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.userdetails.UserDetails.getUsername()" because "userDetails" is null
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.validateToken(JwtService.java:69)
+	at com.loanlelo.LoanLeLe.Filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+2025-06-04 10:47:10 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.userdetails.UserDetails.getUsername()" because "userDetails" is null
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.validateToken(JwtService.java:70)
+	at com.loanlelo.LoanLeLe.Filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:47)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+2025-06-04 10:53:40 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.userdetails.UserDetails.getUsername()" because "userDetails" is null
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.validateToken(JwtService.java:70)
+	at com.loanlelo.LoanLeLe.Filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:48)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+2025-06-04 12:19:59 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - UserDetailsService returned null, which is an interface contract violation
+org.springframework.security.authentication.InternalAuthenticationServiceException: UserDetailsService returned null, which is an interface contract violation
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+2025-06-04 12:24:26 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - UserDetailsService returned null, which is an interface contract violation
+org.springframework.security.authentication.InternalAuthenticationServiceException: UserDetailsService returned null, which is an interface contract violation
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:123)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+2025-06-04 12:26:58 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.security.SignatureException: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:399)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractLoginTypeFromToken(JwtService.java:76)
+	at com.loanlelo.LoanLeLe.Filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:46)
+2025-06-04 14:12:40 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-06-04T07:28:58Z. Current time: 2025-06-04T08:42:40Z, a difference of 4422082 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 15:54:03 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /admin/create - rawPassword cannot be null
+java.lang.IllegalArgumentException: rawPassword cannot be null
+	at org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.encode(BCryptPasswordEncoder.java:107)
+	at com.loanlelo.LoanLeLe.Service.AdminService.AdminRegister.adminCreate(AdminRegister.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+2025-06-04 15:55:56 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /admin/create - rawPassword cannot be null
+java.lang.IllegalArgumentException: rawPassword cannot be null
+	at org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.encode(BCryptPasswordEncoder.java:107)
+	at com.loanlelo.LoanLeLe.Service.AdminService.AdminRegister.adminCreate(AdminRegister.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+2025-06-04 15:57:43 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /admin/create - rawPassword cannot be null
+java.lang.IllegalArgumentException: rawPassword cannot be null
+	at org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.encode(BCryptPasswordEncoder.java:107)
+	at com.loanlelo.LoanLeLe.Service.AdminService.AdminRegister.adminCreates(AdminRegister.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+2025-06-04 15:59:04 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /admin/create - rawPassword cannot be null
+java.lang.IllegalArgumentException: rawPassword cannot be null
+	at org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.encode(BCryptPasswordEncoder.java:107)
+	at com.loanlelo.LoanLeLe.Service.AdminService.AdminRegister.adminCreates(AdminRegister.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+2025-06-04 16:00:28 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /admin/create - rawPassword cannot be null
+java.lang.IllegalArgumentException: rawPassword cannot be null
+	at org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.encode(BCryptPasswordEncoder.java:107)
+	at com.loanlelo.LoanLeLe.Service.AdminService.AdminRegister.adminCreates(AdminRegister.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+2025-06-04 16:03:51 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - No value present
+org.springframework.security.authentication.InternalAuthenticationServiceException: No value present
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.UserInfoService.loadUserByUsername(UserInfoService.java:36)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:121)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+2025-06-04 16:09:49 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - No value present
+org.springframework.security.authentication.InternalAuthenticationServiceException: No value present
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.UserInfoService.loadUserByUsername(UserInfoService.java:36)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:121)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+2025-06-04 16:10:42 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Unique index or primary key violation: "PUBLIC.UKC0R9ATAMXVBHJJVY5J8DA1KAM_INDEX_3 ON PUBLIC.ADMIN(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'admin@example.com' )"; SQL statement:
+insert into admin (email,password,role,username,id) values (?,?,?,?,default) [23505-232]
+2025-06-04 16:10:42 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /admin/create - could not execute statement [Unique index or primary key violation: "PUBLIC.UKC0R9ATAMXVBHJJVY5J8DA1KAM_INDEX_3 ON PUBLIC.ADMIN(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'admin@example.com' )"; SQL statement:
+insert into admin (email,password,role,username,id) values (?,?,?,?,default) [23505-232]] [insert into admin (email,password,role,username,id) values (?,?,?,?,default)]; SQL [insert into admin (email,password,role,username,id) values (?,?,?,?,default)]; constraint [PUBLIC.UKC0R9ATAMXVBHJJVY5J8DA1KAM_INDEX_3]
+org.springframework.dao.DataIntegrityViolationException: could not execute statement [Unique index or primary key violation: "PUBLIC.UKC0R9ATAMXVBHJJVY5J8DA1KAM_INDEX_3 ON PUBLIC.ADMIN(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'admin@example.com' )"; SQL statement:
+insert into admin (email,password,role,username,id) values (?,?,?,?,default) [23505-232]] [insert into admin (email,password,role,username,id) values (?,?,?,?,default)]; SQL [insert into admin (email,password,role,username,id) values (?,?,?,?,default)]; constraint [PUBLIC.UKC0R9ATAMXVBHJJVY5J8DA1KAM_INDEX_3]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:294)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:256)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:560)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [Unique index or primary key violation: "PUBLIC.UKC0R9ATAMXVBHJJVY5J8DA1KAM_INDEX_3 ON PUBLIC.ADMIN(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'admin@example.com' )"; SQL statement:
+insert into admin (email,password,role,username,id) values (?,?,?,?,default) [23505-232]] [insert into admin (email,password,role,username,id) values (?,?,?,?,default)]
+	at org.hibernate.dialect.H2Dialect.lambda$buildSQLExceptionConversionDelegate$3(H2Dialect.java:759)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:116)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.UKC0R9ATAMXVBHJJVY5J8DA1KAM_INDEX_3 ON PUBLIC.ADMIN(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'admin@example.com' )"; SQL statement:
+insert into admin (email,password,role,username,id) values (?,?,?,?,default) [23505-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:523)
+2025-06-04 16:13:09 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - No value present
+org.springframework.security.authentication.InternalAuthenticationServiceException: No value present
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.UserInfoService.loadUserByUsername(UserInfoService.java:36)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:121)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+2025-06-04 16:17:37 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - No value present
+org.springframework.security.authentication.InternalAuthenticationServiceException: No value present
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.UserInfoService.loadUserByUsername(UserInfoService.java:36)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:121)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+2025-06-04 16:22:12 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - No value present
+org.springframework.security.authentication.InternalAuthenticationServiceException: No value present
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.UserInfoService.loadUserByUsername(UserInfoService.java:36)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:121)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+2025-06-04 16:24:37 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Unique index or primary key violation: "PUBLIC.UKC0R9ATAMXVBHJJVY5J8DA1KAM_INDEX_3 ON PUBLIC.ADMIN(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'admin@example.com' )"; SQL statement:
+insert into admin (email,password,role,username,id) values (?,?,?,?,default) [23505-232]
+2025-06-04 16:24:37 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /admin/create - could not execute statement [Unique index or primary key violation: "PUBLIC.UKC0R9ATAMXVBHJJVY5J8DA1KAM_INDEX_3 ON PUBLIC.ADMIN(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'admin@example.com' )"; SQL statement:
+insert into admin (email,password,role,username,id) values (?,?,?,?,default) [23505-232]] [insert into admin (email,password,role,username,id) values (?,?,?,?,default)]; SQL [insert into admin (email,password,role,username,id) values (?,?,?,?,default)]; constraint [PUBLIC.UKC0R9ATAMXVBHJJVY5J8DA1KAM_INDEX_3]
+org.springframework.dao.DataIntegrityViolationException: could not execute statement [Unique index or primary key violation: "PUBLIC.UKC0R9ATAMXVBHJJVY5J8DA1KAM_INDEX_3 ON PUBLIC.ADMIN(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'admin@example.com' )"; SQL statement:
+insert into admin (email,password,role,username,id) values (?,?,?,?,default) [23505-232]] [insert into admin (email,password,role,username,id) values (?,?,?,?,default)]; SQL [insert into admin (email,password,role,username,id) values (?,?,?,?,default)]; constraint [PUBLIC.UKC0R9ATAMXVBHJJVY5J8DA1KAM_INDEX_3]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:294)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:256)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:560)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [Unique index or primary key violation: "PUBLIC.UKC0R9ATAMXVBHJJVY5J8DA1KAM_INDEX_3 ON PUBLIC.ADMIN(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'admin@example.com' )"; SQL statement:
+insert into admin (email,password,role,username,id) values (?,?,?,?,default) [23505-232]] [insert into admin (email,password,role,username,id) values (?,?,?,?,default)]
+	at org.hibernate.dialect.H2Dialect.lambda$buildSQLExceptionConversionDelegate$3(H2Dialect.java:759)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performMutation(GetGeneratedKeysDelegate.java:116)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.UKC0R9ATAMXVBHJJVY5J8DA1KAM_INDEX_3 ON PUBLIC.ADMIN(EMAIL NULLS FIRST) VALUES ( /* 2 */ 'admin@example.com' )"; SQL statement:
+insert into admin (email,password,role,username,id) values (?,?,?,?,default) [23505-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:523)
+2025-06-04 16:25:37 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - No value present
+org.springframework.security.authentication.InternalAuthenticationServiceException: No value present
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.UserInfoService.loadUserByUsername(UserInfoService.java:36)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:121)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+2025-06-04 16:28:34 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - No value present
+org.springframework.security.authentication.InternalAuthenticationServiceException: No value present
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.UserInfoService.loadUserByUsername(UserInfoService.java:36)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:121)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+2025-06-04 16:38:39 ERROR o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthFilter' defined in file [D:\LoanLeLe\LoanLeLe\target\classes\com\loanlelo\LoanLeLe\Filter\JwtAuthFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userInfoService': Unsatisfied dependency expressed through field 'adminRepo': Error creating bean with name 'adminRepo' defined in com.loanlelo.LoanLeLe.Repository.AdminRepo defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.Optional com.loanlelo.LoanLeLe.Repository.AdminRepo.findByEmail(java.lang.String); Reason: At 1:7 and token '*', extraneous input '*' expecting {'(', '[', ':', '{', '?', ID, VERSION, VERSIONED, NATURALID, FK, ALL, AND, ANY, AS, ASC, AVG, BETWEEN, BOTH, BREADTH, BY, CASE, CAST, COLLATE, COLUMN, CONFLICT, CONSTRAINT, CONTAINS, COUNT, CROSS, CUBE, CURRENT, CURRENT_DATE, CURRENT_INSTANT, CURRENT_TIME, CURRENT_TIMESTAMP, CYCLE, DATE, DATETIME, DAY, DEFAULT, DELETE, DEPTH, DESC, DISTINCT, DO, ELEMENT, ELEMENTS, ELSE, EMPTY, END, ENTRY, EPOCH, ERROR, ESCAPE, EVERY, EXCEPT, EXCLUDE, EXISTS, EXTRACT, FETCH, FILTER, FIRST, FOLLOWING, FOR, FORMAT, FROM, FULL, FUNCTION, GROUP, GROUPS, HAVING, HOUR, IGNORE, ILIKE, IN, INCLUDES, INDEX, INDICES, INNER, INSERT, INSTANT, INTERSECT, INTERSECTS, INTO, IS, JOIN, KEY, KEYS, LAST, LATERAL, LEADING, LEFT, LIKE, LIMIT, LIST, LISTAGG, LOCAL, LOCAL_DATE, LOCAL_DATETIME, LOCAL_TIME, MAP, MATERIALIZED, MAX, MAXELEMENT, MAXINDEX, MEMBER, MICROSECOND, MILLISECOND, MIN, MINELEMENT, MININDEX, MINUTE, MONTH, NANOSECOND, NEW, NEXT, NO, NOT, NOTHING, NULLS, OBJECT, OF, OFFSET, OFFSET_DATETIME, ON, ONLY, OR, ORDER, OTHERS, OUTER, OVER, OVERFLOW, OVERLAY, PAD, PARTITION, PERCENT, PLACING, POSITION, PRECEDING, QUARTER, RANGE, RESPECT, RIGHT, ROLLUP, ROW, ROWS, SEARCH, SECOND, SELECT, SET, SIZE, SOME, SUBSTRING, SUM, THEN, TIES, TIME, TIMESTAMP, TIMEZONE_HOUR, TIMEZONE_MINUTE, TO, TRAILING, TREAT, TRIM, TRUNC, TRUNCATE, TYPE, UNBOUNDED, UNION, UPDATE, USING, VALUE, VALUES, WEEK, WHEN, WHERE, WITH, WITHIN, WITHOUT, YEAR, ZONED, NULL, TRUE, FALSE, STRING_LITERAL, JAVA_STRING_LITERAL, INTEGER_LITERAL, LONG_LITERAL, FLOAT_LITERAL, DOUBLE_LITERAL, BIG_INTEGER_LITERAL, BIG_DECIMAL_LITERAL, HEX_LITERAL, BINARY_LITERAL, '{ts', '{d', '{t', '+', '-', IDENTIFIER, QUOTED_IDENTIFIER}; Bad HQL grammar [SELECT * FROM Admin  WHERE email = :email]
+2025-06-04 16:38:39 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:170)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:147)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:517)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:219)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:193)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthFilter' defined in file [D:\LoanLeLe\LoanLeLe\target\classes\com\loanlelo\LoanLeLe\Filter\JwtAuthFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userInfoService': Unsatisfied dependency expressed through field 'adminRepo': Error creating bean with name 'adminRepo' defined in com.loanlelo.LoanLeLe.Repository.AdminRepo defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.Optional com.loanlelo.LoanLeLe.Repository.AdminRepo.findByEmail(java.lang.String); Reason: At 1:7 and token '*', extraneous input '*' expecting {'(', '[', ':', '{', '?', ID, VERSION, VERSIONED, NATURALID, FK, ALL, AND, ANY, AS, ASC, AVG, BETWEEN, BOTH, BREADTH, BY, CASE, CAST, COLLATE, COLUMN, CONFLICT, CONSTRAINT, CONTAINS, COUNT, CROSS, CUBE, CURRENT, CURRENT_DATE, CURRENT_INSTANT, CURRENT_TIME, CURRENT_TIMESTAMP, CYCLE, DATE, DATETIME, DAY, DEFAULT, DELETE, DEPTH, DESC, DISTINCT, DO, ELEMENT, ELEMENTS, ELSE, EMPTY, END, ENTRY, EPOCH, ERROR, ESCAPE, EVERY, EXCEPT, EXCLUDE, EXISTS, EXTRACT, FETCH, FILTER, FIRST, FOLLOWING, FOR, FORMAT, FROM, FULL, FUNCTION, GROUP, GROUPS, HAVING, HOUR, IGNORE, ILIKE, IN, INCLUDES, INDEX, INDICES, INNER, INSERT, INSTANT, INTERSECT, INTERSECTS, INTO, IS, JOIN, KEY, KEYS, LAST, LATERAL, LEADING, LEFT, LIKE, LIMIT, LIST, LISTAGG, LOCAL, LOCAL_DATE, LOCAL_DATETIME, LOCAL_TIME, MAP, MATERIALIZED, MAX, MAXELEMENT, MAXINDEX, MEMBER, MICROSECOND, MILLISECOND, MIN, MINELEMENT, MININDEX, MINUTE, MONTH, NANOSECOND, NEW, NEXT, NO, NOT, NOTHING, NULLS, OBJECT, OF, OFFSET, OFFSET_DATETIME, ON, ONLY, OR, ORDER, OTHERS, OUTER, OVER, OVERFLOW, OVERLAY, PAD, PARTITION, PERCENT, PLACING, POSITION, PRECEDING, QUARTER, RANGE, RESPECT, RIGHT, ROLLUP, ROW, ROWS, SEARCH, SECOND, SELECT, SET, SIZE, SOME, SUBSTRING, SUM, THEN, TIES, TIME, TIMESTAMP, TIMEZONE_HOUR, TIMEZONE_MINUTE, TO, TRAILING, TREAT, TRIM, TRUNC, TRUNCATE, TYPE, UNBOUNDED, UNION, UPDATE, USING, VALUE, VALUES, WEEK, WHEN, WHERE, WITH, WITHIN, WITHOUT, YEAR, ZONED, NULL, TRUE, FALSE, STRING_LITERAL, JAVA_STRING_LITERAL, INTEGER_LITERAL, LONG_LITERAL, FLOAT_LITERAL, DOUBLE_LITERAL, BIG_INTEGER_LITERAL, BIG_DECIMAL_LITERAL, HEX_LITERAL, BINARY_LITERAL, '{ts', '{d', '{t', '+', '-', IDENTIFIER, QUOTED_IDENTIFIER}; Bad HQL grammar [SELECT * FROM Admin  WHERE email = :email]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userInfoService': Unsatisfied dependency expressed through field 'adminRepo': Error creating bean with name 'adminRepo' defined in com.loanlelo.LoanLeLe.Repository.AdminRepo defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.Optional com.loanlelo.LoanLeLe.Repository.AdminRepo.findByEmail(java.lang.String); Reason: At 1:7 and token '*', extraneous input '*' expecting {'(', '[', ':', '{', '?', ID, VERSION, VERSIONED, NATURALID, FK, ALL, AND, ANY, AS, ASC, AVG, BETWEEN, BOTH, BREADTH, BY, CASE, CAST, COLLATE, COLUMN, CONFLICT, CONSTRAINT, CONTAINS, COUNT, CROSS, CUBE, CURRENT, CURRENT_DATE, CURRENT_INSTANT, CURRENT_TIME, CURRENT_TIMESTAMP, CYCLE, DATE, DATETIME, DAY, DEFAULT, DELETE, DEPTH, DESC, DISTINCT, DO, ELEMENT, ELEMENTS, ELSE, EMPTY, END, ENTRY, EPOCH, ERROR, ESCAPE, EVERY, EXCEPT, EXCLUDE, EXISTS, EXTRACT, FETCH, FILTER, FIRST, FOLLOWING, FOR, FORMAT, FROM, FULL, FUNCTION, GROUP, GROUPS, HAVING, HOUR, IGNORE, ILIKE, IN, INCLUDES, INDEX, INDICES, INNER, INSERT, INSTANT, INTERSECT, INTERSECTS, INTO, IS, JOIN, KEY, KEYS, LAST, LATERAL, LEADING, LEFT, LIKE, LIMIT, LIST, LISTAGG, LOCAL, LOCAL_DATE, LOCAL_DATETIME, LOCAL_TIME, MAP, MATERIALIZED, MAX, MAXELEMENT, MAXINDEX, MEMBER, MICROSECOND, MILLISECOND, MIN, MINELEMENT, MININDEX, MINUTE, MONTH, NANOSECOND, NEW, NEXT, NO, NOT, NOTHING, NULLS, OBJECT, OF, OFFSET, OFFSET_DATETIME, ON, ONLY, OR, ORDER, OTHERS, OUTER, OVER, OVERFLOW, OVERLAY, PAD, PARTITION, PERCENT, PLACING, POSITION, PRECEDING, QUARTER, RANGE, RESPECT, RIGHT, ROLLUP, ROW, ROWS, SEARCH, SECOND, SELECT, SET, SIZE, SOME, SUBSTRING, SUM, THEN, TIES, TIME, TIMESTAMP, TIMEZONE_HOUR, TIMEZONE_MINUTE, TO, TRAILING, TREAT, TRIM, TRUNC, TRUNCATE, TYPE, UNBOUNDED, UNION, UPDATE, USING, VALUE, VALUES, WEEK, WHEN, WHERE, WITH, WITHIN, WITHOUT, YEAR, ZONED, NULL, TRUE, FALSE, STRING_LITERAL, JAVA_STRING_LITERAL, INTEGER_LITERAL, LONG_LITERAL, FLOAT_LITERAL, DOUBLE_LITERAL, BIG_INTEGER_LITERAL, BIG_DECIMAL_LITERAL, HEX_LITERAL, BINARY_LITERAL, '{ts', '{d', '{t', '+', '-', IDENTIFIER, QUOTED_IDENTIFIER}; Bad HQL grammar [SELECT * FROM Admin  WHERE email = :email]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminRepo' defined in com.loanlelo.LoanLeLe.Repository.AdminRepo defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.Optional com.loanlelo.LoanLeLe.Repository.AdminRepo.findByEmail(java.lang.String); Reason: At 1:7 and token '*', extraneous input '*' expecting {'(', '[', ':', '{', '?', ID, VERSION, VERSIONED, NATURALID, FK, ALL, AND, ANY, AS, ASC, AVG, BETWEEN, BOTH, BREADTH, BY, CASE, CAST, COLLATE, COLUMN, CONFLICT, CONSTRAINT, CONTAINS, COUNT, CROSS, CUBE, CURRENT, CURRENT_DATE, CURRENT_INSTANT, CURRENT_TIME, CURRENT_TIMESTAMP, CYCLE, DATE, DATETIME, DAY, DEFAULT, DELETE, DEPTH, DESC, DISTINCT, DO, ELEMENT, ELEMENTS, ELSE, EMPTY, END, ENTRY, EPOCH, ERROR, ESCAPE, EVERY, EXCEPT, EXCLUDE, EXISTS, EXTRACT, FETCH, FILTER, FIRST, FOLLOWING, FOR, FORMAT, FROM, FULL, FUNCTION, GROUP, GROUPS, HAVING, HOUR, IGNORE, ILIKE, IN, INCLUDES, INDEX, INDICES, INNER, INSERT, INSTANT, INTERSECT, INTERSECTS, INTO, IS, JOIN, KEY, KEYS, LAST, LATERAL, LEADING, LEFT, LIKE, LIMIT, LIST, LISTAGG, LOCAL, LOCAL_DATE, LOCAL_DATETIME, LOCAL_TIME, MAP, MATERIALIZED, MAX, MAXELEMENT, MAXINDEX, MEMBER, MICROSECOND, MILLISECOND, MIN, MINELEMENT, MININDEX, MINUTE, MONTH, NANOSECOND, NEW, NEXT, NO, NOT, NOTHING, NULLS, OBJECT, OF, OFFSET, OFFSET_DATETIME, ON, ONLY, OR, ORDER, OTHERS, OUTER, OVER, OVERFLOW, OVERLAY, PAD, PARTITION, PERCENT, PLACING, POSITION, PRECEDING, QUARTER, RANGE, RESPECT, RIGHT, ROLLUP, ROW, ROWS, SEARCH, SECOND, SELECT, SET, SIZE, SOME, SUBSTRING, SUM, THEN, TIES, TIME, TIMESTAMP, TIMEZONE_HOUR, TIMEZONE_MINUTE, TO, TRAILING, TREAT, TRIM, TRUNC, TRUNCATE, TYPE, UNBOUNDED, UNION, UPDATE, USING, VALUE, VALUES, WEEK, WHEN, WHERE, WITH, WITHIN, WITHOUT, YEAR, ZONED, NULL, TRUE, FALSE, STRING_LITERAL, JAVA_STRING_LITERAL, INTEGER_LITERAL, LONG_LITERAL, FLOAT_LITERAL, DOUBLE_LITERAL, BIG_INTEGER_LITERAL, BIG_DECIMAL_LITERAL, HEX_LITERAL, BINARY_LITERAL, '{ts', '{d', '{t', '+', '-', IDENTIFIER, QUOTED_IDENTIFIER}; Bad HQL grammar [SELECT * FROM Admin  WHERE email = :email]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.Optional com.loanlelo.LoanLeLe.Repository.AdminRepo.findByEmail(java.lang.String); Reason: At 1:7 and token '*', extraneous input '*' expecting {'(', '[', ':', '{', '?', ID, VERSION, VERSIONED, NATURALID, FK, ALL, AND, ANY, AS, ASC, AVG, BETWEEN, BOTH, BREADTH, BY, CASE, CAST, COLLATE, COLUMN, CONFLICT, CONSTRAINT, CONTAINS, COUNT, CROSS, CUBE, CURRENT, CURRENT_DATE, CURRENT_INSTANT, CURRENT_TIME, CURRENT_TIMESTAMP, CYCLE, DATE, DATETIME, DAY, DEFAULT, DELETE, DEPTH, DESC, DISTINCT, DO, ELEMENT, ELEMENTS, ELSE, EMPTY, END, ENTRY, EPOCH, ERROR, ESCAPE, EVERY, EXCEPT, EXCLUDE, EXISTS, EXTRACT, FETCH, FILTER, FIRST, FOLLOWING, FOR, FORMAT, FROM, FULL, FUNCTION, GROUP, GROUPS, HAVING, HOUR, IGNORE, ILIKE, IN, INCLUDES, INDEX, INDICES, INNER, INSERT, INSTANT, INTERSECT, INTERSECTS, INTO, IS, JOIN, KEY, KEYS, LAST, LATERAL, LEADING, LEFT, LIKE, LIMIT, LIST, LISTAGG, LOCAL, LOCAL_DATE, LOCAL_DATETIME, LOCAL_TIME, MAP, MATERIALIZED, MAX, MAXELEMENT, MAXINDEX, MEMBER, MICROSECOND, MILLISECOND, MIN, MINELEMENT, MININDEX, MINUTE, MONTH, NANOSECOND, NEW, NEXT, NO, NOT, NOTHING, NULLS, OBJECT, OF, OFFSET, OFFSET_DATETIME, ON, ONLY, OR, ORDER, OTHERS, OUTER, OVER, OVERFLOW, OVERLAY, PAD, PARTITION, PERCENT, PLACING, POSITION, PRECEDING, QUARTER, RANGE, RESPECT, RIGHT, ROLLUP, ROW, ROWS, SEARCH, SECOND, SELECT, SET, SIZE, SOME, SUBSTRING, SUM, THEN, TIES, TIME, TIMESTAMP, TIMEZONE_HOUR, TIMEZONE_MINUTE, TO, TRAILING, TREAT, TRIM, TRUNC, TRUNCATE, TYPE, UNBOUNDED, UNION, UPDATE, USING, VALUE, VALUES, WEEK, WHEN, WHERE, WITH, WITHIN, WITHOUT, YEAR, ZONED, NULL, TRUE, FALSE, STRING_LITERAL, JAVA_STRING_LITERAL, INTEGER_LITERAL, LONG_LITERAL, FLOAT_LITERAL, DOUBLE_LITERAL, BIG_INTEGER_LITERAL, BIG_DECIMAL_LITERAL, HEX_LITERAL, BINARY_LITERAL, '{ts', '{d', '{t', '+', '-', IDENTIFIER, QUOTED_IDENTIFIER}; Bad HQL grammar [SELECT * FROM Admin  WHERE email = :email]
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:120)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:104)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:92)
+	at java.base/java.util.Optional.map(Optional.java:260)
+Caused by: org.springframework.data.jpa.repository.query.BadJpqlGrammarException: At 1:7 and token '*', extraneous input '*' expecting {'(', '[', ':', '{', '?', ID, VERSION, VERSIONED, NATURALID, FK, ALL, AND, ANY, AS, ASC, AVG, BETWEEN, BOTH, BREADTH, BY, CASE, CAST, COLLATE, COLUMN, CONFLICT, CONSTRAINT, CONTAINS, COUNT, CROSS, CUBE, CURRENT, CURRENT_DATE, CURRENT_INSTANT, CURRENT_TIME, CURRENT_TIMESTAMP, CYCLE, DATE, DATETIME, DAY, DEFAULT, DELETE, DEPTH, DESC, DISTINCT, DO, ELEMENT, ELEMENTS, ELSE, EMPTY, END, ENTRY, EPOCH, ERROR, ESCAPE, EVERY, EXCEPT, EXCLUDE, EXISTS, EXTRACT, FETCH, FILTER, FIRST, FOLLOWING, FOR, FORMAT, FROM, FULL, FUNCTION, GROUP, GROUPS, HAVING, HOUR, IGNORE, ILIKE, IN, INCLUDES, INDEX, INDICES, INNER, INSERT, INSTANT, INTERSECT, INTERSECTS, INTO, IS, JOIN, KEY, KEYS, LAST, LATERAL, LEADING, LEFT, LIKE, LIMIT, LIST, LISTAGG, LOCAL, LOCAL_DATE, LOCAL_DATETIME, LOCAL_TIME, MAP, MATERIALIZED, MAX, MAXELEMENT, MAXINDEX, MEMBER, MICROSECOND, MILLISECOND, MIN, MINELEMENT, MININDEX, MINUTE, MONTH, NANOSECOND, NEW, NEXT, NO, NOT, NOTHING, NULLS, OBJECT, OF, OFFSET, OFFSET_DATETIME, ON, ONLY, OR, ORDER, OTHERS, OUTER, OVER, OVERFLOW, OVERLAY, PAD, PARTITION, PERCENT, PLACING, POSITION, PRECEDING, QUARTER, RANGE, RESPECT, RIGHT, ROLLUP, ROW, ROWS, SEARCH, SECOND, SELECT, SET, SIZE, SOME, SUBSTRING, SUM, THEN, TIES, TIME, TIMESTAMP, TIMEZONE_HOUR, TIMEZONE_MINUTE, TO, TRAILING, TREAT, TRIM, TRUNC, TRUNCATE, TYPE, UNBOUNDED, UNION, UPDATE, USING, VALUE, VALUES, WEEK, WHEN, WHERE, WITH, WITHIN, WITHOUT, YEAR, ZONED, NULL, TRUE, FALSE, STRING_LITERAL, JAVA_STRING_LITERAL, INTEGER_LITERAL, LONG_LITERAL, FLOAT_LITERAL, DOUBLE_LITERAL, BIG_INTEGER_LITERAL, BIG_DECIMAL_LITERAL, HEX_LITERAL, BINARY_LITERAL, '{ts', '{d', '{t', '+', '-', IDENTIFIER, QUOTED_IDENTIFIER}; Bad HQL grammar [SELECT * FROM Admin  WHERE email = :email]
+	at org.springframework.data.jpa.repository.query.BadJpqlGrammarErrorListener.syntaxError(BadJpqlGrammarErrorListener.java:53)
+	at org.antlr.v4.runtime.ProxyErrorListener.syntaxError(ProxyErrorListener.java:41)
+	at org.antlr.v4.runtime.Parser.notifyErrorListeners(Parser.java:544)
+	at org.antlr.v4.runtime.DefaultErrorStrategy.reportUnwantedToken(DefaultErrorStrategy.java:377)
+	at org.antlr.v4.runtime.DefaultErrorStrategy.singleTokenDeletion(DefaultErrorStrategy.java:548)
+2025-06-04 16:39:26 ERROR o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthFilter' defined in file [D:\LoanLeLe\LoanLeLe\target\classes\com\loanlelo\LoanLeLe\Filter\JwtAuthFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userInfoService': Unsatisfied dependency expressed through field 'adminRepo': Error creating bean with name 'adminRepo' defined in com.loanlelo.LoanLeLe.Repository.AdminRepo defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.Optional com.loanlelo.LoanLeLe.Repository.AdminRepo.findByEmail(java.lang.String); Reason: At 1:7 and token '*', extraneous input '*' expecting {'(', '[', ':', '{', '?', ID, VERSION, VERSIONED, NATURALID, FK, ALL, AND, ANY, AS, ASC, AVG, BETWEEN, BOTH, BREADTH, BY, CASE, CAST, COLLATE, COLUMN, CONFLICT, CONSTRAINT, CONTAINS, COUNT, CROSS, CUBE, CURRENT, CURRENT_DATE, CURRENT_INSTANT, CURRENT_TIME, CURRENT_TIMESTAMP, CYCLE, DATE, DATETIME, DAY, DEFAULT, DELETE, DEPTH, DESC, DISTINCT, DO, ELEMENT, ELEMENTS, ELSE, EMPTY, END, ENTRY, EPOCH, ERROR, ESCAPE, EVERY, EXCEPT, EXCLUDE, EXISTS, EXTRACT, FETCH, FILTER, FIRST, FOLLOWING, FOR, FORMAT, FROM, FULL, FUNCTION, GROUP, GROUPS, HAVING, HOUR, IGNORE, ILIKE, IN, INCLUDES, INDEX, INDICES, INNER, INSERT, INSTANT, INTERSECT, INTERSECTS, INTO, IS, JOIN, KEY, KEYS, LAST, LATERAL, LEADING, LEFT, LIKE, LIMIT, LIST, LISTAGG, LOCAL, LOCAL_DATE, LOCAL_DATETIME, LOCAL_TIME, MAP, MATERIALIZED, MAX, MAXELEMENT, MAXINDEX, MEMBER, MICROSECOND, MILLISECOND, MIN, MINELEMENT, MININDEX, MINUTE, MONTH, NANOSECOND, NEW, NEXT, NO, NOT, NOTHING, NULLS, OBJECT, OF, OFFSET, OFFSET_DATETIME, ON, ONLY, OR, ORDER, OTHERS, OUTER, OVER, OVERFLOW, OVERLAY, PAD, PARTITION, PERCENT, PLACING, POSITION, PRECEDING, QUARTER, RANGE, RESPECT, RIGHT, ROLLUP, ROW, ROWS, SEARCH, SECOND, SELECT, SET, SIZE, SOME, SUBSTRING, SUM, THEN, TIES, TIME, TIMESTAMP, TIMEZONE_HOUR, TIMEZONE_MINUTE, TO, TRAILING, TREAT, TRIM, TRUNC, TRUNCATE, TYPE, UNBOUNDED, UNION, UPDATE, USING, VALUE, VALUES, WEEK, WHEN, WHERE, WITH, WITHIN, WITHOUT, YEAR, ZONED, NULL, TRUE, FALSE, STRING_LITERAL, JAVA_STRING_LITERAL, INTEGER_LITERAL, LONG_LITERAL, FLOAT_LITERAL, DOUBLE_LITERAL, BIG_INTEGER_LITERAL, BIG_DECIMAL_LITERAL, HEX_LITERAL, BINARY_LITERAL, '{ts', '{d', '{t', '+', '-', IDENTIFIER, QUOTED_IDENTIFIER}; Bad HQL grammar [SELECT * FROM Admin  WHERE email = :email]
+2025-06-04 16:39:26 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:170)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:147)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:517)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:219)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:193)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthFilter' defined in file [D:\LoanLeLe\LoanLeLe\target\classes\com\loanlelo\LoanLeLe\Filter\JwtAuthFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userInfoService': Unsatisfied dependency expressed through field 'adminRepo': Error creating bean with name 'adminRepo' defined in com.loanlelo.LoanLeLe.Repository.AdminRepo defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.Optional com.loanlelo.LoanLeLe.Repository.AdminRepo.findByEmail(java.lang.String); Reason: At 1:7 and token '*', extraneous input '*' expecting {'(', '[', ':', '{', '?', ID, VERSION, VERSIONED, NATURALID, FK, ALL, AND, ANY, AS, ASC, AVG, BETWEEN, BOTH, BREADTH, BY, CASE, CAST, COLLATE, COLUMN, CONFLICT, CONSTRAINT, CONTAINS, COUNT, CROSS, CUBE, CURRENT, CURRENT_DATE, CURRENT_INSTANT, CURRENT_TIME, CURRENT_TIMESTAMP, CYCLE, DATE, DATETIME, DAY, DEFAULT, DELETE, DEPTH, DESC, DISTINCT, DO, ELEMENT, ELEMENTS, ELSE, EMPTY, END, ENTRY, EPOCH, ERROR, ESCAPE, EVERY, EXCEPT, EXCLUDE, EXISTS, EXTRACT, FETCH, FILTER, FIRST, FOLLOWING, FOR, FORMAT, FROM, FULL, FUNCTION, GROUP, GROUPS, HAVING, HOUR, IGNORE, ILIKE, IN, INCLUDES, INDEX, INDICES, INNER, INSERT, INSTANT, INTERSECT, INTERSECTS, INTO, IS, JOIN, KEY, KEYS, LAST, LATERAL, LEADING, LEFT, LIKE, LIMIT, LIST, LISTAGG, LOCAL, LOCAL_DATE, LOCAL_DATETIME, LOCAL_TIME, MAP, MATERIALIZED, MAX, MAXELEMENT, MAXINDEX, MEMBER, MICROSECOND, MILLISECOND, MIN, MINELEMENT, MININDEX, MINUTE, MONTH, NANOSECOND, NEW, NEXT, NO, NOT, NOTHING, NULLS, OBJECT, OF, OFFSET, OFFSET_DATETIME, ON, ONLY, OR, ORDER, OTHERS, OUTER, OVER, OVERFLOW, OVERLAY, PAD, PARTITION, PERCENT, PLACING, POSITION, PRECEDING, QUARTER, RANGE, RESPECT, RIGHT, ROLLUP, ROW, ROWS, SEARCH, SECOND, SELECT, SET, SIZE, SOME, SUBSTRING, SUM, THEN, TIES, TIME, TIMESTAMP, TIMEZONE_HOUR, TIMEZONE_MINUTE, TO, TRAILING, TREAT, TRIM, TRUNC, TRUNCATE, TYPE, UNBOUNDED, UNION, UPDATE, USING, VALUE, VALUES, WEEK, WHEN, WHERE, WITH, WITHIN, WITHOUT, YEAR, ZONED, NULL, TRUE, FALSE, STRING_LITERAL, JAVA_STRING_LITERAL, INTEGER_LITERAL, LONG_LITERAL, FLOAT_LITERAL, DOUBLE_LITERAL, BIG_INTEGER_LITERAL, BIG_DECIMAL_LITERAL, HEX_LITERAL, BINARY_LITERAL, '{ts', '{d', '{t', '+', '-', IDENTIFIER, QUOTED_IDENTIFIER}; Bad HQL grammar [SELECT * FROM Admin  WHERE email = :email]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userInfoService': Unsatisfied dependency expressed through field 'adminRepo': Error creating bean with name 'adminRepo' defined in com.loanlelo.LoanLeLe.Repository.AdminRepo defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.Optional com.loanlelo.LoanLeLe.Repository.AdminRepo.findByEmail(java.lang.String); Reason: At 1:7 and token '*', extraneous input '*' expecting {'(', '[', ':', '{', '?', ID, VERSION, VERSIONED, NATURALID, FK, ALL, AND, ANY, AS, ASC, AVG, BETWEEN, BOTH, BREADTH, BY, CASE, CAST, COLLATE, COLUMN, CONFLICT, CONSTRAINT, CONTAINS, COUNT, CROSS, CUBE, CURRENT, CURRENT_DATE, CURRENT_INSTANT, CURRENT_TIME, CURRENT_TIMESTAMP, CYCLE, DATE, DATETIME, DAY, DEFAULT, DELETE, DEPTH, DESC, DISTINCT, DO, ELEMENT, ELEMENTS, ELSE, EMPTY, END, ENTRY, EPOCH, ERROR, ESCAPE, EVERY, EXCEPT, EXCLUDE, EXISTS, EXTRACT, FETCH, FILTER, FIRST, FOLLOWING, FOR, FORMAT, FROM, FULL, FUNCTION, GROUP, GROUPS, HAVING, HOUR, IGNORE, ILIKE, IN, INCLUDES, INDEX, INDICES, INNER, INSERT, INSTANT, INTERSECT, INTERSECTS, INTO, IS, JOIN, KEY, KEYS, LAST, LATERAL, LEADING, LEFT, LIKE, LIMIT, LIST, LISTAGG, LOCAL, LOCAL_DATE, LOCAL_DATETIME, LOCAL_TIME, MAP, MATERIALIZED, MAX, MAXELEMENT, MAXINDEX, MEMBER, MICROSECOND, MILLISECOND, MIN, MINELEMENT, MININDEX, MINUTE, MONTH, NANOSECOND, NEW, NEXT, NO, NOT, NOTHING, NULLS, OBJECT, OF, OFFSET, OFFSET_DATETIME, ON, ONLY, OR, ORDER, OTHERS, OUTER, OVER, OVERFLOW, OVERLAY, PAD, PARTITION, PERCENT, PLACING, POSITION, PRECEDING, QUARTER, RANGE, RESPECT, RIGHT, ROLLUP, ROW, ROWS, SEARCH, SECOND, SELECT, SET, SIZE, SOME, SUBSTRING, SUM, THEN, TIES, TIME, TIMESTAMP, TIMEZONE_HOUR, TIMEZONE_MINUTE, TO, TRAILING, TREAT, TRIM, TRUNC, TRUNCATE, TYPE, UNBOUNDED, UNION, UPDATE, USING, VALUE, VALUES, WEEK, WHEN, WHERE, WITH, WITHIN, WITHOUT, YEAR, ZONED, NULL, TRUE, FALSE, STRING_LITERAL, JAVA_STRING_LITERAL, INTEGER_LITERAL, LONG_LITERAL, FLOAT_LITERAL, DOUBLE_LITERAL, BIG_INTEGER_LITERAL, BIG_DECIMAL_LITERAL, HEX_LITERAL, BINARY_LITERAL, '{ts', '{d', '{t', '+', '-', IDENTIFIER, QUOTED_IDENTIFIER}; Bad HQL grammar [SELECT * FROM Admin  WHERE email = :email]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminRepo' defined in com.loanlelo.LoanLeLe.Repository.AdminRepo defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.Optional com.loanlelo.LoanLeLe.Repository.AdminRepo.findByEmail(java.lang.String); Reason: At 1:7 and token '*', extraneous input '*' expecting {'(', '[', ':', '{', '?', ID, VERSION, VERSIONED, NATURALID, FK, ALL, AND, ANY, AS, ASC, AVG, BETWEEN, BOTH, BREADTH, BY, CASE, CAST, COLLATE, COLUMN, CONFLICT, CONSTRAINT, CONTAINS, COUNT, CROSS, CUBE, CURRENT, CURRENT_DATE, CURRENT_INSTANT, CURRENT_TIME, CURRENT_TIMESTAMP, CYCLE, DATE, DATETIME, DAY, DEFAULT, DELETE, DEPTH, DESC, DISTINCT, DO, ELEMENT, ELEMENTS, ELSE, EMPTY, END, ENTRY, EPOCH, ERROR, ESCAPE, EVERY, EXCEPT, EXCLUDE, EXISTS, EXTRACT, FETCH, FILTER, FIRST, FOLLOWING, FOR, FORMAT, FROM, FULL, FUNCTION, GROUP, GROUPS, HAVING, HOUR, IGNORE, ILIKE, IN, INCLUDES, INDEX, INDICES, INNER, INSERT, INSTANT, INTERSECT, INTERSECTS, INTO, IS, JOIN, KEY, KEYS, LAST, LATERAL, LEADING, LEFT, LIKE, LIMIT, LIST, LISTAGG, LOCAL, LOCAL_DATE, LOCAL_DATETIME, LOCAL_TIME, MAP, MATERIALIZED, MAX, MAXELEMENT, MAXINDEX, MEMBER, MICROSECOND, MILLISECOND, MIN, MINELEMENT, MININDEX, MINUTE, MONTH, NANOSECOND, NEW, NEXT, NO, NOT, NOTHING, NULLS, OBJECT, OF, OFFSET, OFFSET_DATETIME, ON, ONLY, OR, ORDER, OTHERS, OUTER, OVER, OVERFLOW, OVERLAY, PAD, PARTITION, PERCENT, PLACING, POSITION, PRECEDING, QUARTER, RANGE, RESPECT, RIGHT, ROLLUP, ROW, ROWS, SEARCH, SECOND, SELECT, SET, SIZE, SOME, SUBSTRING, SUM, THEN, TIES, TIME, TIMESTAMP, TIMEZONE_HOUR, TIMEZONE_MINUTE, TO, TRAILING, TREAT, TRIM, TRUNC, TRUNCATE, TYPE, UNBOUNDED, UNION, UPDATE, USING, VALUE, VALUES, WEEK, WHEN, WHERE, WITH, WITHIN, WITHOUT, YEAR, ZONED, NULL, TRUE, FALSE, STRING_LITERAL, JAVA_STRING_LITERAL, INTEGER_LITERAL, LONG_LITERAL, FLOAT_LITERAL, DOUBLE_LITERAL, BIG_INTEGER_LITERAL, BIG_DECIMAL_LITERAL, HEX_LITERAL, BINARY_LITERAL, '{ts', '{d', '{t', '+', '-', IDENTIFIER, QUOTED_IDENTIFIER}; Bad HQL grammar [SELECT * FROM Admin  WHERE email = :email]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.Optional com.loanlelo.LoanLeLe.Repository.AdminRepo.findByEmail(java.lang.String); Reason: At 1:7 and token '*', extraneous input '*' expecting {'(', '[', ':', '{', '?', ID, VERSION, VERSIONED, NATURALID, FK, ALL, AND, ANY, AS, ASC, AVG, BETWEEN, BOTH, BREADTH, BY, CASE, CAST, COLLATE, COLUMN, CONFLICT, CONSTRAINT, CONTAINS, COUNT, CROSS, CUBE, CURRENT, CURRENT_DATE, CURRENT_INSTANT, CURRENT_TIME, CURRENT_TIMESTAMP, CYCLE, DATE, DATETIME, DAY, DEFAULT, DELETE, DEPTH, DESC, DISTINCT, DO, ELEMENT, ELEMENTS, ELSE, EMPTY, END, ENTRY, EPOCH, ERROR, ESCAPE, EVERY, EXCEPT, EXCLUDE, EXISTS, EXTRACT, FETCH, FILTER, FIRST, FOLLOWING, FOR, FORMAT, FROM, FULL, FUNCTION, GROUP, GROUPS, HAVING, HOUR, IGNORE, ILIKE, IN, INCLUDES, INDEX, INDICES, INNER, INSERT, INSTANT, INTERSECT, INTERSECTS, INTO, IS, JOIN, KEY, KEYS, LAST, LATERAL, LEADING, LEFT, LIKE, LIMIT, LIST, LISTAGG, LOCAL, LOCAL_DATE, LOCAL_DATETIME, LOCAL_TIME, MAP, MATERIALIZED, MAX, MAXELEMENT, MAXINDEX, MEMBER, MICROSECOND, MILLISECOND, MIN, MINELEMENT, MININDEX, MINUTE, MONTH, NANOSECOND, NEW, NEXT, NO, NOT, NOTHING, NULLS, OBJECT, OF, OFFSET, OFFSET_DATETIME, ON, ONLY, OR, ORDER, OTHERS, OUTER, OVER, OVERFLOW, OVERLAY, PAD, PARTITION, PERCENT, PLACING, POSITION, PRECEDING, QUARTER, RANGE, RESPECT, RIGHT, ROLLUP, ROW, ROWS, SEARCH, SECOND, SELECT, SET, SIZE, SOME, SUBSTRING, SUM, THEN, TIES, TIME, TIMESTAMP, TIMEZONE_HOUR, TIMEZONE_MINUTE, TO, TRAILING, TREAT, TRIM, TRUNC, TRUNCATE, TYPE, UNBOUNDED, UNION, UPDATE, USING, VALUE, VALUES, WEEK, WHEN, WHERE, WITH, WITHIN, WITHOUT, YEAR, ZONED, NULL, TRUE, FALSE, STRING_LITERAL, JAVA_STRING_LITERAL, INTEGER_LITERAL, LONG_LITERAL, FLOAT_LITERAL, DOUBLE_LITERAL, BIG_INTEGER_LITERAL, BIG_DECIMAL_LITERAL, HEX_LITERAL, BINARY_LITERAL, '{ts', '{d', '{t', '+', '-', IDENTIFIER, QUOTED_IDENTIFIER}; Bad HQL grammar [SELECT * FROM Admin  WHERE email = :email]
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:120)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:104)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:92)
+	at java.base/java.util.Optional.map(Optional.java:260)
+Caused by: org.springframework.data.jpa.repository.query.BadJpqlGrammarException: At 1:7 and token '*', extraneous input '*' expecting {'(', '[', ':', '{', '?', ID, VERSION, VERSIONED, NATURALID, FK, ALL, AND, ANY, AS, ASC, AVG, BETWEEN, BOTH, BREADTH, BY, CASE, CAST, COLLATE, COLUMN, CONFLICT, CONSTRAINT, CONTAINS, COUNT, CROSS, CUBE, CURRENT, CURRENT_DATE, CURRENT_INSTANT, CURRENT_TIME, CURRENT_TIMESTAMP, CYCLE, DATE, DATETIME, DAY, DEFAULT, DELETE, DEPTH, DESC, DISTINCT, DO, ELEMENT, ELEMENTS, ELSE, EMPTY, END, ENTRY, EPOCH, ERROR, ESCAPE, EVERY, EXCEPT, EXCLUDE, EXISTS, EXTRACT, FETCH, FILTER, FIRST, FOLLOWING, FOR, FORMAT, FROM, FULL, FUNCTION, GROUP, GROUPS, HAVING, HOUR, IGNORE, ILIKE, IN, INCLUDES, INDEX, INDICES, INNER, INSERT, INSTANT, INTERSECT, INTERSECTS, INTO, IS, JOIN, KEY, KEYS, LAST, LATERAL, LEADING, LEFT, LIKE, LIMIT, LIST, LISTAGG, LOCAL, LOCAL_DATE, LOCAL_DATETIME, LOCAL_TIME, MAP, MATERIALIZED, MAX, MAXELEMENT, MAXINDEX, MEMBER, MICROSECOND, MILLISECOND, MIN, MINELEMENT, MININDEX, MINUTE, MONTH, NANOSECOND, NEW, NEXT, NO, NOT, NOTHING, NULLS, OBJECT, OF, OFFSET, OFFSET_DATETIME, ON, ONLY, OR, ORDER, OTHERS, OUTER, OVER, OVERFLOW, OVERLAY, PAD, PARTITION, PERCENT, PLACING, POSITION, PRECEDING, QUARTER, RANGE, RESPECT, RIGHT, ROLLUP, ROW, ROWS, SEARCH, SECOND, SELECT, SET, SIZE, SOME, SUBSTRING, SUM, THEN, TIES, TIME, TIMESTAMP, TIMEZONE_HOUR, TIMEZONE_MINUTE, TO, TRAILING, TREAT, TRIM, TRUNC, TRUNCATE, TYPE, UNBOUNDED, UNION, UPDATE, USING, VALUE, VALUES, WEEK, WHEN, WHERE, WITH, WITHIN, WITHOUT, YEAR, ZONED, NULL, TRUE, FALSE, STRING_LITERAL, JAVA_STRING_LITERAL, INTEGER_LITERAL, LONG_LITERAL, FLOAT_LITERAL, DOUBLE_LITERAL, BIG_INTEGER_LITERAL, BIG_DECIMAL_LITERAL, HEX_LITERAL, BINARY_LITERAL, '{ts', '{d', '{t', '+', '-', IDENTIFIER, QUOTED_IDENTIFIER}; Bad HQL grammar [SELECT * FROM Admin  WHERE email = :email]
+	at org.springframework.data.jpa.repository.query.BadJpqlGrammarErrorListener.syntaxError(BadJpqlGrammarErrorListener.java:53)
+	at org.antlr.v4.runtime.ProxyErrorListener.syntaxError(ProxyErrorListener.java:41)
+	at org.antlr.v4.runtime.Parser.notifyErrorListeners(Parser.java:544)
+	at org.antlr.v4.runtime.DefaultErrorStrategy.reportUnwantedToken(DefaultErrorStrategy.java:377)
+	at org.antlr.v4.runtime.DefaultErrorStrategy.singleTokenDeletion(DefaultErrorStrategy.java:548)
+2025-06-04 16:57:38 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - No value present
+org.springframework.security.authentication.InternalAuthenticationServiceException: No value present
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.UserInfoService.loadUserByUsername(UserInfoService.java:36)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:121)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+2025-06-04 17:04:49 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - No value present
+org.springframework.security.authentication.InternalAuthenticationServiceException: No value present
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.UserInfoService.loadUserByUsername(UserInfoService.java:38)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:121)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+2025-06-04 17:06:09 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - No value present
+org.springframework.security.authentication.InternalAuthenticationServiceException: No value present
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.UserInfoService.loadUserByUsername(UserInfoService.java:38)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:121)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+2025-06-04 17:11:12 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - No value present
+org.springframework.security.authentication.InternalAuthenticationServiceException: No value present
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.UserInfoService.loadUserByUsername(UserInfoService.java:38)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:121)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+2025-06-04 17:19:46 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /admin/get - JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:408)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:356)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:204)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:176)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:150)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 5, column: 1]
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2666)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:742)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2103)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:1753)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextFieldName(UTF8StreamJsonParser.java:1040)
+2025-06-04 17:20:32 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - No value present
+org.springframework.security.authentication.InternalAuthenticationServiceException: No value present
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.UserInfoService.loadUserByUsername(UserInfoService.java:38)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:121)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+2025-06-04 17:22:38 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - No value present
+org.springframework.security.authentication.InternalAuthenticationServiceException: No value present
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.UserInfoService.loadUserByUsername(UserInfoService.java:48)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:121)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+2025-06-04 17:26:24 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - No value present
+org.springframework.security.authentication.InternalAuthenticationServiceException: No value present
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.UserInfoService.loadUserByUsername(UserInfoService.java:49)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:121)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+2025-06-04 17:29:05 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - No value present
+org.springframework.security.authentication.InternalAuthenticationServiceException: No value present
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.UserInfoService.loadUserByUsername(UserInfoService.java:40)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:121)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+2025-06-04 17:31:26 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - No value present
+org.springframework.security.authentication.InternalAuthenticationServiceException: No value present
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.UserInfoService.loadUserByUsername(UserInfoService.java:40)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:121)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+2025-06-04 17:32:56 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - No value present
+org.springframework.security.authentication.InternalAuthenticationServiceException: No value present
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.UserInfoService.loadUserByUsername(UserInfoService.java:40)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:121)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+2025-06-04 17:35:13 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - No value present
+org.springframework.security.authentication.InternalAuthenticationServiceException: No value present
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.UserInfoService.loadUserByUsername(UserInfoService.java:40)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:121)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+2025-06-04 17:43:58 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - No value present
+org.springframework.security.authentication.InternalAuthenticationServiceException: No value present
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.UserInfoService.loadUserByUsername(UserInfoService.java:41)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.retrieveUser(DaoAuthenticationProvider.java:121)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:136)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+2025-06-04 22:10:39 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2025-06-04T12:52:35Z. Current time: 2025-06-04T16:40:39Z, a difference of 13684346 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:427)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:04:09 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:13:19 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:15:01 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:15:10 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:17:27 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:20:11 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:20:52 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:20:59 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:21:42 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:26:54 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:27:35 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:27:37 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:29:03 ERROR c.l.L.E.GlobalExceptionHandler - Unexpected error on request: /auth/user/login - Bad credentials
+org.springframework.security.authentication.BadCredentialsException: Bad credentials
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:144)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:214)
+	at com.loanlelo.LoanLeLe.Controller.AuthenticationController.UserController.authenticateAndGetToken(UserController.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+2025-06-04 23:32:10 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:35:03 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:35:08 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:35:59 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:36:44 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:37:24 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:37:30 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:39:27 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:44:42 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:44:45 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:48:11 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:48:14 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:49:10 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:51:23 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
+2025-06-04 23:52:25 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589)
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173)
+	at com.loanlelo.LoanLeLe.Service.SecurityUtil.JwtService.extractAllClaims(JwtService.java:64)
