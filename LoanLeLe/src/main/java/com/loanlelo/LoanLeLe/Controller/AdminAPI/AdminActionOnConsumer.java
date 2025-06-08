@@ -1,6 +1,7 @@
 package com.loanlelo.LoanLeLe.Controller.AdminAPI;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.loanlelo.LoanLeLe.DTO.AdminDTO.AdminViewLoanData;
 import com.loanlelo.LoanLeLe.DTO.ConsumerDTO.AdminSeeConsumer;
 import com.loanlelo.LoanLeLe.Service.ConsumerService.AdminTakeActionOnConsumerData;
 
@@ -17,6 +19,7 @@ import com.loanlelo.LoanLeLe.Service.ConsumerService.AdminTakeActionOnConsumerDa
 @RequestMapping("/admin")
 public class AdminActionOnConsumer {
     private AdminTakeActionOnConsumerData adminTakeActionOnConsumerData;
+
 
     public AdminActionOnConsumer(AdminTakeActionOnConsumerData adminTakeActionOnConsumerData){
         this.adminTakeActionOnConsumerData = adminTakeActionOnConsumerData;
@@ -38,4 +41,10 @@ public class AdminActionOnConsumer {
     public Boolean adminActiveLoan(@PathVariable Long loanId){
         return adminTakeActionOnConsumerData.adminActiveLoan(loanId);
     }
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @GetMapping("/view/loan/data/{id}")
+     public Optional<AdminViewLoanData> adminViewData(@PathVariable Long id){
+        return adminTakeActionOnConsumerData.adminViewLoanData(id);
+     }
+
 }

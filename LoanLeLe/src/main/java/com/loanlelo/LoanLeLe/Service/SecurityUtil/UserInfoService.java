@@ -8,8 +8,10 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import com.loanlelo.LoanLeLe.Entity.Admin;
+import com.loanlelo.LoanLeLe.Entity.Company;
 import com.loanlelo.LoanLeLe.Entity.Consumer;
 import com.loanlelo.LoanLeLe.Repository.AdminRepo;
+import com.loanlelo.LoanLeLe.Repository.CompanyRepo;
 import com.loanlelo.LoanLeLe.Repository.ConsumerRepo;
 
 import java.util.Collections;
@@ -22,9 +24,12 @@ public class UserInfoService implements UserDetailsService {
 
     private AdminRepo adminRepo;
 
-    public UserInfoService(ConsumerRepo consumerRepo, AdminRepo adminRepo) {
+    private CompanyRepo companyRepo;
+
+    public UserInfoService(ConsumerRepo consumerRepo, AdminRepo adminRepo, CompanyRepo companyRepo) {
         this.consumerRepo = consumerRepo;
         this.adminRepo = adminRepo;
+        this.companyRepo = companyRepo;
     }
 
     @Override
@@ -47,6 +52,15 @@ public class UserInfoService implements UserDetailsService {
                     newConsumer.getPassword(),
                     true, true, true, true,
                     Collections.singletonList(new SimpleGrantedAuthority(newConsumer.getRole())));
+        }
+        Optional<Company> company = companyRepo.findByBusinessEmail(username);
+        if (company.isPresent()) {
+            Company newCompany = company.get();
+            return new User(
+                    newCompany.getBusinessEmail(),
+                    newCompany.getPassword(),
+                    true, true, true, true,
+                    Collections.singletonList(new SimpleGrantedAuthority(newCompany.getRole())));
         }
 
         throw new UsernameNotFoundException("User not found with email: " + username);

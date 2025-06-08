@@ -1,39 +1,54 @@
 package com.loanlelo.LoanLeLe.Entity;
 
-import java.util.List;
+import java.time.LocalDate;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.loanlelo.LoanLeLe.Enum.CompanyRequest.Status;
 
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 public class Company {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(unique = true)
-    private String name;
-    @Column(unique = true)
-    private String email;
-    private String password;
-    private String gstNumber;
-    private String contactNumber;
-    private String address;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "company")
-    @JsonManagedReference
-    private List<DataAccessRequest> dataAccessRequests;
+    private String companyName;
+
+    private String businessType;
+
+    private String contactFirstName;
+
+    private String contactLastName;
+
+    @Column(unique = true)
+    private String businessEmail;
+
+    private String businessPhone;
+
+    private String taxId;
+
+    private String password;
+
+    private String confirmPassword;
+
+    private boolean termsAgreed;
+
+    private Status status;
+
+    private String rejectReason;
+
+    private String role;
+
+    private LocalDate date;
+
 }

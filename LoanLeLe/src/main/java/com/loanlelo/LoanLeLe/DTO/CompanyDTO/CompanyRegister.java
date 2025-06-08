@@ -1,35 +1,50 @@
 package com.loanlelo.LoanLeLe.DTO.CompanyDTO;
 
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Pattern;
-import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.*;
+
 import lombok.Data;
 
 @Data
 public class CompanyRegister {
-    @NotNull(message = "Name must not be null")
-    @Size(min = 2, max = 50, message = "Name must be between 2 and 50 characters")
-    private String name;
 
-    @NotNull(message = "Email must not be null")
-    @Email(message = "Invalid email format")
-    private String email;
+    @NotBlank(message = "Company name is required.")
+    @Size(max = 255, message = "Company name cannot exceed 255 characters.")
+    private String companyName;
 
-    @NotNull(message = "Password must not be null")
-    @Size(min = 8, max = 100, message = "Password must be between 8 and 100 characters")
+    @Size(max = 255, message = "Business type cannot exceed 255 characters.")
+    private String businessType;
+
+    @NotBlank(message = "Contact first name is required.")
+    @Size(max = 255, message = "Contact first name cannot exceed 255 characters.")
+    private String contactFirstName;
+
+    @NotBlank(message = "Contact last name is required.")
+    @Size(max = 255, message = "Contact last name cannot exceed 255 characters.")
+    private String contactLastName;
+
+    @NotBlank(message = "Business email is required.")
+    @Email(message = "Please provide a valid email address.")
+    @Size(max = 255, message = "Business email cannot exceed 255 characters.")
+    private String businessEmail;
+
+    @NotBlank(message = "Business phone is required.")
+    @Pattern(regexp = "^[0-9+\\-() ]+$", message = "Business phone must contain only valid phone characters.")
+    @Size(max = 255, message = "Business phone cannot exceed 255 characters.")
+    private String businessPhone;
+
+    @NotBlank(message = "Tax ID is required.")
+    @Size(max = 255, message = "Tax ID cannot exceed 255 characters.")
+    private String taxId;
+
+    @NotBlank(message = "Password is required.")
+    @Size(min = 8, max = 64, message = "Password must be between 8 and 64 characters.")
     private String password;
 
-    @NotNull(message = "GST Number must not be null")
-    @Pattern(regexp = "^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[1-9A-Z]{1}Z[0-9A-Z]{1}$", message = "Invalid GST number format")
-    private String gstNumber;
+    @NotBlank(message = "Confirm password is required.")
+    @Size(min = 8, max = 64, message = "Confirm password must be between 8 and 64 characters.")
+    private String confirmPassword;
 
-    @NotNull(message = "Contact number must not be null")
-    @Pattern(regexp = "^[+]?[0-9]{10,15}$", message = "Invalid contact number format")
-    private String contactNumber;
-
-    @NotNull(message = "Address must not be null")
-    @Size(min = 5, max = 100, message = "Address must be between 5 and 100 characters")
-    private String address;
+    @AssertTrue(message = "You must agree to the terms and conditions.")
+    private boolean termsAgreed;
 
 }

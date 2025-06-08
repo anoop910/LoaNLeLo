@@ -9,6 +9,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.loanlelo.LoanLeLe.DTO.CompanyDTO.CompanySeeConsumerData;
 import com.loanlelo.LoanLeLe.DTO.ConsumerDTO.ConsumeProfileLoanData;
 import com.loanlelo.LoanLeLe.Entity.LoanTakenByConsumer;
 import com.loanlelo.LoanLeLe.Enum.LoanbyConsumer.Status;
@@ -32,4 +33,10 @@ public interface LoanTakeByConsumerRepo extends JpaRepository<LoanTakenByConsume
         @Query("SELECT new com.loanlelo.LoanLeLe.DTO.ConsumerDTO.ConsumeProfileLoanData(l.loanAmount, l.status, l.loanPurpose, l.interestRate, l.loanTerm, l.monthlyPayment)"
                         + "FROM LoanTakenByConsumer l " + "JOIN l.consumer c" + " WHERE c.email =:email")
         List<ConsumeProfileLoanData> makeComsuerProfile(@Param("email") String email);
+
+
+
+        @Query("SELECT new  com.loanlelo.LoanLeLe.DTO.CompanyDTO.CompanySeeConsumerData(c.firstName, c.lastName, c.email, c.phone, l.loanPurpose, l.loanAmount, l.status)"
+                        + "FROM LoanTakenByConsumer l " + "JOIN l.consumer c")
+        List<CompanySeeConsumerData> companySeeConsumerData();
 }

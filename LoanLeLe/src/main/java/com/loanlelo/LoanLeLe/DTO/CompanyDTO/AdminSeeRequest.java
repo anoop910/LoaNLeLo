@@ -2,22 +2,27 @@ package com.loanlelo.LoanLeLe.DTO.CompanyDTO;
 
 import java.time.LocalDate;
 
-import com.loanlelo.LoanLeLe.Enum.DataAccessRequest.Status;
+import com.loanlelo.LoanLeLe.Enum.CompanyRequest.Status;
 
 import lombok.Data;
 
 @Data
 public class AdminSeeRequest {
-    private String name;
-    private String email;
-    private Status status;
-    private LocalDate requestDate;
-
-    public AdminSeeRequest(String name, String email, LocalDate requestDate, Status status) {
-        this.name = name;
-        this.email = email;
-        this.requestDate = requestDate;
-        this.status = status;
-    }
+   private Long id;
+   private String companyName;
+   private String businessEmail;
+   private Status status;
+   private LocalDate date;
+   private String businessType;
+   public AdminSeeRequest(Long id, String companyName, String businessEmail, Status status, LocalDate date,
+         String businessType) {
+      this.id = id;
+      this.companyName = companyName;
+      this.businessEmail = businessEmail;
+      this.status = status;
+      this.date = date;
+      this.businessType = businessType;
+   }
+   
 
 }
